@@ -65,7 +65,7 @@ version=$(curl -Ss --connect-timeout 5 -m 2 https://api.bt.sy/api/panel/get_vers
 fi
 
 if [ "$version" = '' ];then
-	version='7.9.3'
+	version='7.9.5'
 fi
 armCheck=$(uname -m|grep arm)
 if [ "${armCheck}" ];then
